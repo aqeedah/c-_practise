@@ -250,13 +250,37 @@ namespace C_sharp_practice
            // Console.WriteLine(book1.author);
             //Console.WriteLine(book1.pages);
 
-            Console.WriteLine(book2.title);  */
+            Console.WriteLine(book2.title);  
 
             Student student1 = new Student("Jim", "Business", 2.8);
             Student student2 = new Student("Pam", "Art", 3.6);
 
            Console.WriteLine(student1.HasHonors());
            Console.WriteLine(student2.HasHonors());
+
+            Movie avenger = new Movie("The Avengers", "Joss Whedon", "PG-13");
+            Movie Shrek = new Movie("Shrek", "Adam Adamsons", "PG");
+
+            Console.WriteLine(avenger.Rating); 
+
+            Song holiday = new Song("Holiday", "Green Day", 200);
+            Console.WriteLine(Song.songCount);
+            Song Kashmir = new Song("Kashmir", "Led Zeppelin", 150);
+
+            Console.WriteLine(Song.songCount);
+
+            //Console.WriteLine(Kashmir.getSongCount()); 
+
+            UsefulTools.SayHi("Mike");  */
+
+            Chef chef = new Chef();
+            chef.MakeChicken();
+            chef.MakeSpecialDish();
+
+            ItalianChef italianChef = new ItalianChef();
+            italianChef.MakeChicken();
+            italianChef.MakePasta();
+            italianChef.MakeSpecialDish();
         }
         //creating method
         static void SayHi(string name, int age)
